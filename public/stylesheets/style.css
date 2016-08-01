@@ -14,17 +14,9 @@ body {
 }
 
 div.board {
-    background-color: brown;
+    background-color: #F8F8F8;
     width: 100%;
-    background: ##F8F8F8;
-    background: -moz-radial-gradient(center, ellipse cover, ##F8F8F8 57%, #c79810 99%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(57%, ##F8F8F8), color-stop(99%, #c79810));
-    background: -webkit-radial-gradient(center, ellipse cover, ##F8F8F8 57%, #c79810 99%);
-    background: -o-radial-gradient(center, ellipse cover, ##F8F8F8 57%, #c79810 99%);
-    background: -ms-radial-gradient(center, ellipse cover, ##F8F8F8 57%, #c79810 99%);
-    background: radial-gradient(ellipse at center, ##F8F8F8 57%, #c79810 99%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='##F8F8F8', endColorstr='#c79810', GradientType=1);
-
+    background: #F8F8F8;
 }
 
 div.note {
