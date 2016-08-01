@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 
 body,
 html,
@@ -45,7 +45,7 @@ div.note:active {
 div.note p {
     font-size: 22px;
     padding: 5px;
-    font-family: "Shadows Into Light", Arial;
+    font-family: "Indie Flower", Arial;
 }
 
 div.note:hover > span {
