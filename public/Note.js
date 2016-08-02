@@ -90,9 +90,10 @@ var Board = React.createClass({
     componentWillMount: function () {
         var self = this;
         if (this.props.count) {
-            $.getJSON("https://baconipsum.com/api/?type=all-meat&sentences=" + this.props.count + "&start-with-lorem=1&callback=?", function (results) {
-                results[0].split('. ').forEach(function (sentence) {
-                    self.add(sentence.substring(0, 40));
+            $.getJSON("https://www.randomtext.me/api/p-" + 5 + "/20-40", function (results) {
+                    var sentence = results.text_out.replace(/(<([^>]+)>)/ig,"")
+                    sentence.split(", ").forEach(function (fragment) {
+                    self.add(fragment);
                 });
             });
         }
