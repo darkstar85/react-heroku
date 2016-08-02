@@ -90,10 +90,10 @@ var Board = React.createClass({
     componentWillMount: function () {
         var self = this;
         if (this.props.count) {
-            $.getJSON("https://www.randomtext.me/api/p-" + this.props.count + "/20-30", function (results) {
+            $.getJSON("https://www.randomtext.me/api/p-" + this.props.count + "/20-40", function (results) {
                     var sentence = results.text_out.replace(/(<([^>]+)>)/ig,"")
                     sentence.split(", ").forEach(function (fragment) {
-                    self.add(fragment);
+                    self.add(fragment.substring(0, 40));
                 });
             });
         }
